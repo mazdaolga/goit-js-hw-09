@@ -1,0 +1,36 @@
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-item {
+    flex-basis: calc(33.333% - 10px);
+    box-sizing: border-box;
+}
+
+.gallery-link {
+    display: block;
+    overflow: hidden;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+body .sl-overlay {
+    background-color: rgba(46, 47, 66, 0.8);
+}
+body .sl-counter {
+color: #fff !important;
+}
